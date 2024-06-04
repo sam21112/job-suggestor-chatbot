@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: job-suggestor-chatbot
+    env: python
+    buildCommand: |
+      cd frontend
+      npm install
+      npm run build
+    startCommand: gunicorn run:app
+    
