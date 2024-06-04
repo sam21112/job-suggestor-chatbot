@@ -21,8 +21,7 @@ function App() {
 
   async function handleFileSubmit(event) {
     event.preventDefault();
-    const url = 'http://localhost:3000/uploadFile';
-
+    const url = 'https://job-suggestor-chatbot.onrender.com/uploadFile';
     if (file) {
       const formData = new FormData();
       formData.append('file', file);
@@ -54,12 +53,11 @@ function App() {
       }
     }
   }
-
-  
+   
  
 async function handleTextSubmit(event) {
   event.preventDefault();
-  const url = 'http://localhost:3000/text';
+  const url = 'https://job-suggestor-chatbot.onrender.com/text';
 
   if (chatInput.trim() !== '') {
     setMessages(prevMessages => [...prevMessages, new Message({ id: 0, message: chatInput.trim() })]);
