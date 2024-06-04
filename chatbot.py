@@ -15,8 +15,7 @@ from dotenv import load_dotenv
 load_dotenv()
 openai_api_key = os.getenv('OPENAI_API_KEY')
 
-openai_api_key = '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'
-
+ 
  
 @app.route('/text', methods=['POST'])
 
