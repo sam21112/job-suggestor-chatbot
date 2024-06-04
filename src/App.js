@@ -95,12 +95,15 @@ async function handleTextSubmit(event) {
   return (
     <div className="App">
       <div className="chat-container">
+      <div className="chat-feed">
+
         <ChatFeed
           messages={messages} // Array: list of message objects
           isTyping={false} // Boolean: is the recipient typing
           hasInputField={false} // Boolean: use an input field
           showSenderName // Boolean: show the name of the user who sent the message
         />
+        </div>
         <form onSubmit={handleFileSubmit}>
           <input type="file" onChange={handleChange} />
           <Grid mt={2}> 

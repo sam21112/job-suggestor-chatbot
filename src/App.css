@@ -69,6 +69,7 @@ body {
   max-width: 600px;
   box-shadow: 0 0 15px var(--neon-blue);
   margin: 20px;
+  
 }
 .user-message {
   background-color: #e1ffc7; /* Light green background for user messages */
