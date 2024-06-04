@@ -9,6 +9,11 @@ import traceback
 from pypdf import PdfReader
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+openai_api_key = os.getenv('OPENAI_API_KEY')
 
 openai_api_key = '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'
 
